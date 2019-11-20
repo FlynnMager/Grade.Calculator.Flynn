@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grade Calculator by Flynn</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+<h1>Grade Calculator</h1>
+
+<div>Please enter grades for each assignment in the given categories,</div>
+
+<div> separated only by a comma, no spaces. See table for examples.</div>
+
+<table id="table" border="5px">
+    <tr>
+        <td>Category</td>
+        <td>Grades</td>
+        <td>%Weight</td>
+    </tr>
+    <tr>
+        <td id="t">Tests</td>
+        <td><input id="testScores" value="50,90,100"></td>
+        <td><input id="testWeight" value="15"></td>
+    </tr>
+    <tr>
+        <td id="q">Quizzes</td>
+        <td><input id="quizScores" value="70,100,100"></td>
+        <td><input id="quizWeight" value="15"></td>
+    </tr>
+    <tr>
+        <td id="p">Projects</td>
+        <td><input id="projectScores" value="70,60,90"></td>
+        <td><input id="projectWeight" value="20"></td>
+    </tr>
+    <tr>
+        <td id="c">Classwork</td>
+        <td><input id="classworkScores" value="60,70,85"></td>
+        <td><input id="classworkWeight" value="20"></td>
+    </tr>
+    <tr>
+        <td id="h">Homework</td>
+        <td><input id="homeworkScores" value="80,50,90"></td>
+        <td><input id="homeworkWeight" value="10"></td>
+    </tr>
+    <tr>
+        <td>Final Weight</td>
+        <td>-------------------</td>
+        <td><input id="finalWeight" value="20"></td>
+    </tr>
+    <tr>
+        <td>Desired Grade</td>
+        <td><input id="desiredGrade" value="80"></td>
+        <td>-------------------</td>
+    </tr>
+</table>
+
+<button id="button" onclick="onSubmit()">Submit</button>
+
+<div id="currentGrade"></div>
+<div id="finalGrade"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+body {
+    font-family: "Comic Sans MS";
+    text-align: center;
+    background-color: mediumaquamarine;
+}
+
+#table {
+    font-family: "Comic Sans MS";
+    margin-right: auto;
+    margin-left: auto;
+    border-color: aquamarine;
+
+}
